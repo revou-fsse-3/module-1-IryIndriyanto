@@ -1,3 +1,3 @@
 # Hi I am Iry
 
-hai nama lengkap saya Iry Indriyanto
+hai nama lengkap saya Iry Indri
