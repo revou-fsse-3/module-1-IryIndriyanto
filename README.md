@@ -1,2 +1,3 @@
 # Hi I am Iry
-`nano`
+
+hai nama lengkap saya Iry Indriyanto
