@@ -4,6 +4,6 @@
 
 ![IryIndriyanto](assets/img1.jpg)
 
-Salam, saya Iry Indriyanto. Saya adalah seorang electrical engineer yang memiliki ketertarikan tinggi dalam dunia teknologi. Selain pekerjaan utama saya sebagai electrical engineer, saya juga tengah menjalani perjalanan belajar sebagai software engineer di RevoU. Keputusan ini saya ambil karena saya ingin mengembangkan keterampilan saya dalam pengembangan perangkat lunak dan mencari peluang karier yang lebih baik di dunia teknologi. Saya yakin bahwa gabungan antara keahlian di bidang listrik dan perangkat lunak akan membuka pintu bagi peluang yang menarik dan memungkinkan saya untuk berkontribusi lebih dalam industri ini. Saya sangat bersemangat untuk terus belajar dan tumbuh.
+Hello, I'm Iry Indriyanto. I'm an electrical engineer with a strong interest in the world of technology. In addition to my main job as an electrical engineer, I'm currently on a learning journey as a software engineer at RevoU. I made this decision because I want to develop my skills in software development and seek better career opportunities in the tech industry. I believe that the combination of expertise in electrical engineering and software will open doors to exciting opportunities and allow me to contribute more to this industry. I'm very enthusiastic about continuous learning and growth.
 
-Mari saling terhubung di [linkedIn](https://www.linkedin.com/in/iry-indriyanto-357167111)
+Let's connect on [linkedIn](https://www.linkedin.com/in/iry-indriyanto-357167111)
