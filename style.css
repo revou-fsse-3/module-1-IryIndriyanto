@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+.logo{
+    height: 70px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    justify-content: flex-end;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.flex{
+    display: flex;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+.profilePic{
+    height: 40px;
+}
