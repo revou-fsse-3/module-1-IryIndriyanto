@@ -9,19 +9,27 @@
   <body>
     <header>
       <!-- start of navigation bar -->
-    <nav>
-      <img class="logo" src="./assets/logo.png" />
-      <div class="menu">
-        <a href="#main">HOME</a>
-        <a href="#main">ABOUT</a>
-        <a href="#main">CONTACT</a>
-        <img class="profile-pic" src="./assets/profile.png" />
-      </div>
-    </nav>
-    <!-- end of navigation bar -->
-
+      <nav>
+        <img class="logo" src="./assets/logo.png" />
+        <div class="menu">
+          <a href="#main">HOME</a>
+          <a href="#main">ABOUT</a>
+          <a href="#main">CONTACT</a>
+          <img class="profile-pic" src="./assets/profile.png" />
+        </div>
+        <span class="ham-menu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <div id="menu-mobile">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            &times;
+          </a>
+          <img class="profile-pic" src="./assets/profile.png" />
+          <a href="#main">HOME</a>
+          <a href="#main">ABOUT</a>
+          <a href="#main">CONTACT</a>
+        </div>
+      </nav>
+      <!-- end of navigation bar -->
     </header>
-    
 
     <main>
       <!-- start of hero section -->
@@ -49,18 +57,27 @@
       <!-- start of write recipe section -->
       <section class="write-recipe">
         <form action="">
-          <label for="title" class="title">Tulis Nama Resepmu, Meow</label>
-          <input type="text" id="title">
-          <label for="food-photo" class="file"><p>Klik disini untuk</p><p>Upload Foto</p><p>Makananmu</p></label>
-          <input type="file" name="" id="food-photo" class="file">
+          <label for="title" class="title">Tulis Resepmu, Meow</label>
+          <input type="text" id="title" />
+          <select name="" id="category">
+            <option value="">Makanan</option>
+            <option value="">Minuman</option>
+            <option value="">Camilan</option>
+          </select>
+          <label for="food-photo" class="file"
+            ><p>Klik disini untuk</p>
+            <p>Upload Foto</p>
+            <p>Makananmu</p>
+          </label>
+          <input type="file" name="" id="food-photo" class="file" />
           <label for="ingredients" class="ingredients">Bahan-bahan</label>
           <textarea name="" id="ingredients" cols="30" rows="10"></textarea>
           <label for="steps" class="steps">Langkah Memasak</label>
           <textarea name="" id="steps" cols="30" rows="10"></textarea>
-          <input type="submit" id="submit">
-        </form>                       
-        </section>
-      </div>
+          <input type="submit" id="submit" />
+        </form>
+      </section>
+
       <!-- end of write recipe section -->
     </main>
     <footer>

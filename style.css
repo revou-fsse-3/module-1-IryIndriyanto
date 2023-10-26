@@ -34,6 +34,7 @@ header {
   top: 0;
   z-index: 1;
 
+  /* navigation bar */
   & nav {
     padding: 0.5rem 5%;
     display: flex;
@@ -42,16 +43,14 @@ header {
     align-items: center;
     border-bottom: solid 2px rgb(99, 99, 99);
     background-color: rgb(42, 39, 34);
-
-    & .logo {
-      height: 4rem;
-    }
+    height: 4.5rem;
 
     & .menu {
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: flex-end;
+      height: 100%;
 
       & a {
         display: inline-flex;
@@ -69,6 +68,14 @@ header {
       height: 4rem;
       margin: 0 20px;
     }
+
+    & .ham-menu{
+      display: none;
+    }
+
+    & #menu-mobile {
+      display: none;
+    }
   }
 }
 
@@ -76,9 +83,10 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 6rem;
+  gap: 4rem;
   margin: 3% 10%;
 
+  /* hero section */
   & .hero {
     display: flex;
     justify-content: center;
@@ -141,6 +149,7 @@ main {
     }
   }
 
+  /* write recipe section */
   & .write-recipe {
     width: 100%;
     height: 60rem;
@@ -159,20 +168,25 @@ main {
       grid-template-rows: repeat(13, 1fr) 3.5rem;
       grid-gap: 1rem;
 
-      & label{
+      & label {
         font-size: 2rem;
       }
 
       & #title {
-        grid-area: 2/3/3/-3;
+        grid-area: 2/1/3/6;
       }
 
-      & .title{
+      & .title {
         grid-area: 1/1/2/-1;
         text-align: center;
       }
 
-      & .file{
+      & #category {
+        grid-area: 2/6/3/9;
+        font-size: 1em;
+      }
+
+      & .file {
         grid-area: 4/-4/8/9;
         background-color: rgba(0, 0, 0, 0.3);
         border-radius: 1rem;
@@ -182,33 +196,31 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-                
       }
 
-      & #food-photo{
-        display: none;       
+      & #food-photo {
+        display: none;
       }
 
-      & .ingredients{
+      & .ingredients {
         grid-area: 3/1/4/-1;
       }
-      
-      & #ingredients{
+
+      & #ingredients {
         resize: none;
         grid-area: 4/1/8/6;
       }
 
-      & .steps{
+      & .steps {
         grid-area: 8/1/9/-1;
       }
 
-
-      & #steps{
+      & #steps {
         resize: none;
         grid-area: 9/1/14/9;
       }
 
-      & #submit{
+      & #submit {
         grid-area: 14/3/15/-3;
         font-size: 1.3rem;
         background-color: rgb(0, 155, 13);
@@ -229,17 +241,72 @@ footer {
 
 /* for responsive */
 @media screen and (max-width: 800px) {
-  html{
-    font-size: 0.75rem;
-  }
-  
-  body{
-    background-color: #000;
+  html {
+    font-size: 0.8rem;
+
+    & nav {
+      & .menu {
+        display: none;
+      }
+
+      & .ham-menu{
+        display: block;
+        color: white;
+        
+      }
+
+      & #menu-mobile {
+        display: block;
+        position: relative;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: rgb(42, 39, 34);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+
+        & .closebtn{
+          position: absolute;
+          font-size: 4rem;
+          top: -1.5rem;
+          left: 0;
+        }
+
+        & .profile-pic{
+          position: absolute;
+          top: 1rem;
+          right: 0.5rem;
+        }
+
+        & a {
+          text-align: right;
+          font-size: 1.8rem;
+          color: white;
+          text-decoration: none;
+          display: block;
+          padding: 2rem 2rem ;
+        }
+
+        & a:hover{
+          color: aquamarine;
+        }
+      }
+    }
   }
 }
 
-@media screen and (max-width: 600px){
-  html{
-    font-size: 0.5rem;
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  html {
+    font-size: 0.4rem;
   }
 }
